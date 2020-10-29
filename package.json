@@ -2,9 +2,12 @@
   "name": "github-battle",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://cameronfrost.github.io/github-battle/",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "predeploy": "npm build",
+    "deploy": "gh-pages -d build"
   },
   "babel": {
     "presets": [
@@ -14,7 +17,6 @@
   },
   "keywords": [],
   "author": "Cameron Frost",
-  "homepage": "https://cameronfrost.github.io/github-battle/",
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^3.1.0",
