@@ -6,8 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build:dev": "webpack --display-error-details --config webpack.config.js --progress --color",
-    "build:prod": "webpack --env.prod --config webpack.config.js --progress --color",
+    "build": "webpack",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
