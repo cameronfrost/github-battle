@@ -22,6 +22,12 @@ li {
   padding: 50px;
 }
 
+.dark {
+  color: #DADADA;
+  background: #1c2022;
+  min-height: 100%;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -49,16 +55,16 @@ li {
   justify-content: space-around;
 }
 
-.header-sm {
-  font-size: 28px;
-  font-weight: 300;
-  margin: 10px;
-}
-
 .header-lg {
   font-size: 35px;
   font-weight: 300;
   margin: 20px;
+}
+
+.header-sm {
+  font-size: 28px;
+  font-weight: 300;
+  margin: 10px;
 }
 
 .avatar {
@@ -104,22 +110,22 @@ li {
   border-radius: 3px;
 }
 
-.repo {
+.card {
   margin: 10px 0;
   width: 250px;
   padding: 20px;
 }
 
-.repo a {
+.card a {
   text-decoration: none;
 }
 
-.repo img {
+.card img {
   margin-bottom: 8px;
 }
 
 .instructions-container {
-  margin: 100 px 0;
+  margin: 100px 0;
 }
 
 .container-sm {
@@ -134,7 +140,7 @@ li {
 
 .battle-instructions li {
   flex: 1;
-  min-width: 300 px;
+  min-width: 300px
 }
 
 .battle-instructions svg {
@@ -204,7 +210,7 @@ li {
 
 .dark-btn:disabled {
   background: #f2f2f2;
-  color: #c7c7c7; 
+  color: #c7c7c7;
 }
 
 .players-container {
@@ -226,7 +232,7 @@ li {
 }
 
 .player-info .link {
-  margin-left: 10px
+  margin-left: 10px;
 }
 
 .btn-space {
@@ -237,4 +243,24 @@ li {
   color: #ff1616;
   font-size: 20px;
   margin: 50px 0;
+}
+
+.bg-dark {
+  background: rgb(36, 40, 42);
+  border-radius: 3px;
+}
+
+.player-inputs .input-dark {
+  color: #DADADA;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.light-btn {
+  color: #000;
+  background: #aaa8a8;
+}
+
+.light-btn:disabled {
+  background: #292929;
+  color: #4a4a4a;
 }
