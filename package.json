@@ -6,9 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "NODE_ENV='production' webpack"
   },
   "babel": {
     "presets": [
@@ -16,13 +14,15 @@
       "@babel/preset-react"
     ],
     "plugins": [
-      "@babel/plugin-proposal-class-properties"
+      "@babel/plugin-proposal-class-properties",
+      "syntax-dynamic-import"
     ]
   },
   "keywords": [],
   "author": "Cameron Frost",
   "license": "ISC",
   "dependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "prop-types": "^15.7.2",
     "query-string": "^6.13.7",
     "react": "^16.8.4",
